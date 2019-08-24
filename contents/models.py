@@ -112,7 +112,7 @@ class Recommendation(models.Model):
     name = models.CharField(max_length=40)
     message = models.CharField(max_length=400)
     image = models.ImageField(upload_to='recommendations', default='recommendations/default')
-    summary = models.CharField(max_length=200)
+    summary = models.CharField(max_length=400)
 
 
     def __str__(self):
