@@ -123,7 +123,7 @@ class Certification(models.Model):
     title = models.CharField(max_length=100)
     authority = models.CharField(max_length=30)
     date_issued = models.CharField(max_length=20)
-    document = models.FileField(upload_to='certification', blank=True)
+    document = models.FileField(upload_to='static/images', blank=True)
 
     def __str__(self):
         return self.title
