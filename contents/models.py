@@ -5,7 +5,7 @@ from django.db import models
 class Profile(models.Model):
     contact_no = models.CharField(max_length=20)
     address = models.CharField(max_length=200)
-    image = models.ImageField(upload_to='profile_pics')
+    image = models.ImageField(upload_to='profile_pic')
     title = models.CharField(max_length=100, blank=True)
     linkedin_url = models.CharField(max_length=100)
     github_url = models.CharField(max_length=50)
@@ -123,7 +123,7 @@ class Certification(models.Model):
     title = models.CharField(max_length=100)
     authority = models.CharField(max_length=30)
     date_issued = models.CharField(max_length=20)
-    document = models.FileField(upload_to='certifications', blank=True)
+    document = models.FileField(upload_to='certification', blank=True)
 
     def __str__(self):
         return self.title
