@@ -26,7 +26,7 @@ SECRET_KEY = '@prgev#(+n5rf_%d7yz5s5m215l380d+*pbu6n(x&c!7who6$)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['thamer1resume.herokuapp.com']
+ALLOWED_HOSTS = ['thamer2resume.herokuapp.com']
 
 
 # Application definition
